@@ -4,6 +4,8 @@ Makes PDF page navigation in Zotero's reader zoom to and step through the
 page's content. This is useful on e-ink readers and other devices where
 scrolling is annoying. Inspired by KOReader's zoom and paging modes.
 
+<img width="818" height="593" alt="image" src="https://github.com/user-attachments/assets/f9642cd1-c12e-41a7-80c5-affc882144d5" />
+
 ## Usage
 
 Click the toolbar button next to the zoom buttons to open the settings popup:
