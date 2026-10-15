@@ -1,7 +1,7 @@
 {
   "name": "zotero-pdf-content-flow",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zotero plugin that zooms to and steps through the content of PDF pages, column by column, for e-ink and other scroll-averse readers.",
   "config": {
     "addonName": "PDF Content Flow",
