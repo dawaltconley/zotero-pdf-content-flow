@@ -1,8 +1,13 @@
 // Styles for the reader UI document (toolbar, popups).
 
+$selector: '.pdf-content-flow-popup' !default;
+
+@use 'appearance-popup' with (
+  $selector: $selector
+);
+
 .pdf-content-flow-popup {
-  // anchored to the toolbar button in code instead of the right edge
-  inset-inline-end: auto;
+  inset-inline-end: auto; // anchored to the toolbar button in code instead of the right edge
 
   .split-toggle button {
     font-size: 12px;

@@ -144,7 +144,7 @@ export class Popup {
     const popup = h(
       doc,
       'div',
-      { className: `modal-popup appearance-popup ${POPUP_CLASS}` },
+      { className: `modal-popup ${POPUP_CLASS}` },
       [
         h(doc, 'div', { className: 'group' }, [
           option('Paging', mode.el),
