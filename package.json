@@ -15,7 +15,7 @@
     "build": "zotero-plugin build && tsc --noEmit",
     "lint:check": "prettier --check . && eslint .",
     "lint:fix": "prettier --write . && eslint . --fix",
-    "release": "zotero-plugin release",
+    "release": "npm run lint:check && zotero-plugin release",
     "test": "vitest run"
   },
   "author": "Dylan Awalt-Conley",
