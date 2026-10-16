@@ -141,40 +141,35 @@ export class Popup {
       h(doc, 'div', { className: 'value' }, [overlap.el, '%']),
     );
 
-    const popup = h(
-      doc,
-      'div',
-      { className: `modal-popup ${POPUP_CLASS}` },
-      [
-        h(doc, 'div', { className: 'group' }, [
-          option('Paging', mode.el),
-          option('Columns', columns.el),
-        ]),
-        h(doc, 'div', { className: 'group' }, [
-          option(
-            'Content area',
-            h(doc, 'div', { className: 'value' }, [
-              areaLabel,
-              drawButton,
-              resetButton,
-            ]),
-          ),
-          option(
-            'Margin',
-            h(doc, 'div', { className: 'value' }, [margin.el, 'px']),
-          ),
-          overlapOption,
-        ]),
-        h(doc, 'div', { className: 'footer' }, [
-          h(doc, 'button', {
-            className: 'toolbar-button',
-            textContent: 'Save as default',
-            title: 'Use these settings for documents without their own',
-            onclick: () => callbacks.onSaveDefaults(),
-          }),
-        ]),
-      ],
-    );
+    const popup = h(doc, 'div', { className: `modal-popup ${POPUP_CLASS}` }, [
+      h(doc, 'div', { className: 'group' }, [
+        option('Paging', mode.el),
+        option('Columns', columns.el),
+      ]),
+      h(doc, 'div', { className: 'group' }, [
+        option(
+          'Content area',
+          h(doc, 'div', { className: 'value' }, [
+            areaLabel,
+            drawButton,
+            resetButton,
+          ]),
+        ),
+        option(
+          'Margin',
+          h(doc, 'div', { className: 'value' }, [margin.el, 'px']),
+        ),
+        overlapOption,
+      ]),
+      h(doc, 'div', { className: 'footer' }, [
+        h(doc, 'button', {
+          className: 'toolbar-button',
+          textContent: 'Save as default',
+          title: 'Use these settings for documents without their own',
+          onclick: () => callbacks.onSaveDefaults(),
+        }),
+      ]),
+    ]);
 
     this.overlay = h(
       doc,
